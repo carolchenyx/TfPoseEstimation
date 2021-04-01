@@ -25,7 +25,7 @@ tf.compat.v1.flags.DEFINE_boolean('concat', False, 'concat')
 tf.compat.v1.flags.DEFINE_integer('Shuffle', 4, 'depth_to_space:2/4')
 
 tf.compat.v1.flags.DEFINE_string("config", 'config/mv2_mpii_224x224.py', "config file path")
-tf.compat.v1.flags.DEFINE_string("backbone", 'resnet18', "backbone:mobilenetv1/mobilenetv2"
+tf.compat.v1.flags.DEFINE_string("backbone", 'mobilenetv2', "backbone:mobilenetv1/mobilenetv2"
                                                       "/mobilenetXT/mobilenetv3/hourglass/efficientnet/resnet18")
 tf.compat.v1.flags.DEFINE_string("modeloutputFile", 'rehab_train', "model output dir")
 tf.compat.v1.flags.DEFINE_string("checkpoints_file", None, " checkpoints file")
@@ -62,7 +62,7 @@ tf.compat.v1.flags.DEFINE_bool(
 tf.compat.v1.flags.DEFINE_boolean("checkanno", True,"check annotation")
 
 tf.compat.v1.flags.DEFINE_string("dataset",'MPII_13',"choose data format:MPII_13/MPII/COCO/YOGA")
-tf.compat.v1.flags.DEFINE_integer("totaljoints", 9, "MPII16/MPII_13/COCO13/YOGA13")
+tf.compat.v1.flags.DEFINE_integer("totaljoints", 13, "MPII16/MPII_13/COCO13/YOGA13")
 
 tf.compat.v1.flags.DEFINE_integer("inputResH", 224, "Input image height")
 tf.compat.v1.flags.DEFINE_integer("inputResW", 224, "Input image width")
